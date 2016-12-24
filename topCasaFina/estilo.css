@@ -10,3 +10,13 @@
 
 	font-size: 24px;
 }
+
+.contato-select, .botoes-tipo {
+	width: 50% ;
+	display: inline-block;
+	vertical-align: top;
+}
+.botoes-tipo .radio:first-child {
+	margin-top: 0;
+}
+
