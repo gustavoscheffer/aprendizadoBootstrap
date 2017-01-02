@@ -2,18 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+
 	
 	<title>TopCasaFina</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="collapse-navbar">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menus-site" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -35,54 +34,65 @@
         </div>     
       </div>
     </nav>
+
+    <div class="topcasafina-banner">
+      <h1>TopCasafina Arquitetura</h1>
+      <p>Construindo o seu sonho desde 2000 A.C</p>
+      <button type="button" class="btn btn-primary btn-lg">Contate-nos agora!</button>
+      
+    </div>
   </header>
 
-  <section class="container" id="sobre-nos">
+  <div class="container">
+  <section id="sobre-nos">
 
     <h2>Sobre Nós</h2>
-    <img class="img-responsive" src="img/empresa.jpg">	 
+    <div class="row">
+      <img class="img-responsive col-sm-6 col-md-6" src="img/empresa.jpg">	 
 
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true"   aria-controls="collapseOne">  
-            Desde 1935  
-          </h3> 
-        </div>  
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">  
-          <div class="panel-body">          
-            <p>Des  de 1935 trazendo casas, mans  ões e prédios lindos para o mundo.</p>  
+      <div class="panel-group col-sm-6" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+              Desde 1935  
+            </h3> 
+          </div>  
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">  
+            <div class="panel-body">          
+              <p>Des  de 1935 trazendo casas, mans  ões e prédios lindos para o mundo.</p>  
+            </div>  
           </div>  
         </div>  
-      </div>  
-      <div class="panel panel-default"> 
-        <div class="panel-heading" role="tab" id="headingTwo">  
-          <h3 class="panel-title" data-toggle="collapse" data-  parent="#accordion" data-target="#collapseTwo" aria-expanded="false"    aria-controls="collapseTwo"> 
-            Preços Acessiveis 
-          </a>  
-        </h3> 
-      </div>  
-      <div id="collapseTwo" class="p  anel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-        <div class="panel-body">  
-          <p>Preços a partir de   R$ 1  000,00.</p>
-        </div>  
-      </div>  
-    </div>
-    <div class="panel panel-default"  >
-      <div class="panel-heading" rol  e="tab" id="headingThree">
-        <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" data-target="#collapseThree" ria-controls="collapseThree "> 
-          Alegria em colaborar par  a   um mundo mais bonito  
-        </h3> 
-      </div>  
-      <div id ="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-        <div class="panel-body">
-          <p> Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.</p>
+        <div class="panel panel-default"> 
+          <div class="panel-heading" role="tab" id="headingTwo">  
+            <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false"    aria-controls="collapseTwo"> 
+              Preços Acessiveis  
+            </h3>
+          </div>   
+          <div id="collapseTwo" class="p  anel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">  
+              <p>Preços a partir de   R$ 1  000,00.</p>
+            </div>  
+          </div>  
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" rol  e="tab" id="headingThree">
+            <h3 class="panel-title" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" data-target="#collapseThree" ria-controls="collapseThree "> 
+            Alegria em colaborar par  a   um mundo mais bonito  
+            </h3> 
+          </div>  
+          <div id ="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <p> Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>	
+    </div>   	
   </section>
+</div>  
 
-  <div class="jumbotron">
+  <div class="jumbotron" id="jumbotron-fix">
     <div class="container">
       <h2>Tudo que voce Precisar, encontra aqui</h2>
       <p>O negócio esta indo de vento em poupa</p>
@@ -91,43 +101,55 @@
 
   <section id="nossos-projetos" class="container">
     <h2>Nossos Projetos</h2>
-    <figure class="thumbnail">    
-      <img src="img/projetos/casa-castelo.png">
-      <figcaption class="caption">
-        <h3>Casa Castelo</h3>
-        <p> Muito Loca essa foto!!!</p>
-      </figcaption>
-    </figure>
-    <figure class="thumbnail">    
-      <img src="img/projetos/casa-lago.png">
-      <figcaption class="caption">
-        <h3>Casa Lago</h3>
-        <p> Muito Loca essa foto!!!</p>
-      </figcaption>
-    </figure>
-    <figure class="thumbnail">    
-      <img src="img/projetos/mercado-marapira.png">
-      <figcaption class="caption">
-        <h3>Mercado Marapira</h3>
-        <p> Muito Loca essa foto!!!</p>
-      </figcaption>
-    </figure>
-    <figure class="thumbnail">    
-      <img src="img/projetos/palacio-dionisio.png">
-      <figcaption class="caption">
-        <h3>Palácio Dionisio</h3>
-        <p> Muito Loca essa foto!!!</p>
-      </figcaption>
-    </figure>
-    <figure class="thumbnail">    
-      <img src="img/projetos/residencia-ludi.png">
-      <figcaption class="caption">
-        <h3>Residencia Ludi</h3>
-        <p> Muito Loca essa foto!!!</p>
-      </figcaption>
-    </figure>
+    
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4">
+        <figure class="thumbnail">    
+          <img src="img/projetos/casa-castelo.png">
+          <figcaption class="caption">
+            <h3>Casa Castelo</h3>
+            <p> Muito Loca essa foto!!!</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4">
+        <figure class="thumbnail">    
+          <img src="img/projetos/casa-lago.png">
+          <figcaption class="caption">
+            <h3>Casa do Lago</h3>
+            <p> Muito Loca essa foto!!!</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4">  
+        <figure class="thumbnail">    
+          <img src="img/projetos/mercado-marapira.png">
+          <figcaption class="caption">
+            <h3>Mercado Marapira</h3>
+            <p> Muito Loca essa foto!!!</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4">
+        <figure class="thumbnail">    
+          <img src="img/projetos/palacio-dionisio.png">
+          <figcaption class="caption">
+            <h3>Palácio Dionisio</h3>
+            <p> Muito Loca essa foto!!!</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4">
+        <figure class="thumbnail">    
+          <img src="img/projetos/residencia-ludi.png">
+          <figcaption class="caption">
+            <h3>Residencia Ludi</h3>
+            <p> Muito Loca essa foto!!!</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
   </section>
-
 
   <section id="depoimentos">
 
@@ -182,61 +204,64 @@
     </div>
   </section>
 
-  <section id="video" class="container">
-    <h2>Video Instiucioal</h2>
-    <!-- 16:9 aspect ratio -->
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
-    </div>
+<div class="container">  
+  <div class="row"> 
+    <section id="video" class="container col-sm-6">    
+      <h2>Video Instiucioal</h2>    
+      <div class="embed-responsive embed-responsive-16by9"> 
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" lowfullscreen></iframe>    
+      </div>
+    </section>
+  
+      <section id="contato" class="col-sm-6 ">
+        <h2>Contato</h2>
+        <h4>Entre em contato conosco</h4>
+
+        <form>
+          <div class="form-group">
+            <label for="nome-contato">Nome: </label>
+            <input type="text" class="form-control" placeholder="Seu Nome" name="nome-contato">
+          </div>
+
+          <div class="form-group">
+            <label for="email-contato">Email: </label> 
+            <div class="input-group">
+              <div class="input-group-addon">@</div>
+              <input type="email" class="form-control" placeholder="Seu E-mail" name="email-contato">
+            </div>
+          </div>
+
+
+          <div class="botoes-tipo">
+            <div class="radio">  
+              <label> 
+                <input type="radio" name="tipo-contato" value="pf"> 
+                Pessoa Fisica 
+              </label>  
+            </div>    
+            <div class="radio">  
+              <label> 
+                <input type="radio" name="tipo-contato" value="pj" checked> 
+                Pessoa Juridica
+              </label>
+            </div>
+        </div><!--
+            
+      
+      --><div class="contato-select"> 
+      <select class="form-control" name="tipo-solicitacao">
+        <option value="" selected disabled>Tipo de imovel</option>
+        <option value="casa">Casa</option>
+        <option value="mansao">Mansão</option>
+        <option value="castelo">Castelo</option>
+      </select>
+      </div>
+      <button type="submit" class="btn btn-primary" activate onclick="alert('Podemos enviar os dados agora?')">Enviar</button>
+
+      </form>
   </section>
-
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <h4>Entre em contato conosco</h4>
-
-    <form>
-      <div class="form-group">
-        <label for="nome-contato">Nome: </label>
-        <input type="text" class="form-control" placeholder="Seu Nome" name="nome-contato">
-      </div>
-
-      <div class="form-group">
-        <label for="email-contato">Email: </label> 
-        <div class="input-group">
-          <div class="input-group-addon">@</div>
-          <input type="email" class="form-control" placeholder="Seu E-mail" name="email-contato">
-        </div>
-      </div>
-
-
-      <div class="botoes-tipo">
-        <div class="radio">  
-          <label> 
-            <input type="radio" name="tipo-contato" value="pf"> 
-            Pessoa Fisica 
-          </label>  
-        </div>    
-        <div class="radio">  
-          <label> 
-            <input type="radio" name="tipo-contato" value="pj" checked> 
-            Pessoa Juridica
-          </label>
-        </div>
-    </div><!--
-        
-  --><div class="contato-select"> 
-  <select class="form-control" name="tipo-solicitacao">
-    <option value="" selected disabled>Tipo de imovel</option>
-    <option value="casa">Casa</option>
-    <option value="mansao">Mansão</option>
-    <option value="castelo">Castelo</option>
-  </select>
-</div>
-  <button type="submit" class="btn btn-primary" activate onclick="alert('Podemos enviar os dados agora?')">Enviar</button>
-
-</form>
-</section>
-
+  </div>
+</div>    
 <footer>
   <address>
     <strong>TopCasaFina Arquitetura</strong><br>
@@ -250,5 +275,8 @@
   </address>
 </footer>
 
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/navbar-banner-fix.js"></script>
+  <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
