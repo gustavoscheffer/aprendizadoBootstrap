@@ -1,180 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container">
-    <div role="navigation">
-        <ul class="nav nav-tabs">
-          <li role="presentation"><a href="#">Janeiro</a></li>
-          <li role="presentation"><a href="#">Fevereiro</a></li>
-          <li role="presentation"><a href="#">Março</a></li>
-          <li role="presentation"><a href="#">Abril</a></li>
-          <li role="presentation"><a href="#">Maio</a></li>
-          <li role="presentation"><a href="#">Junho</a></li>
-          <li role="presentation"><a href="#">Julho</a></li>
-          <li role="presentation"><a href="#">Agosto</a></li>
-          <li role="presentation"><a href="#">Setembro</a></li>
-          <li role="presentation"><a href="#">Outubro</a></li>
-          <li role="presentation"><a href="#">Novembro</a></li>
-          <li role="presentation" class="active"><a href="#">Dezembro</a></li>
-        </ul>
-    </div>
-</div>
-<div class="container">
-    <div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">
-  <h3>Dezembro</h3>
-  </div>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/js/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/js/bootstrap/css/estilo_table.css">
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <h1> Escala CORe</h1>
+            </div>
+        </header>
 
-  <!-- Table -->
-        <table class="table table-bordered">
-            <tr>
-                <th>#</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>11</th>
-            </tr>
-            
-            <tr>
-                <td>Gustavo Scheffer</td>
-                <td>7-17</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>                
-            </tr>
-            <tr>
-                <td>Jonatan Silva</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>                
-            </tr>
-            <tr>
-                <td>Fabio Rosa</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>                
-            </tr>
 
-        </table>
-    </div>    
-</div>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Janeiro</a></li>
+                <li role="presentation"><a href="#">Fevereiro</a></li>
+                <li role="presentation"><a href="#">Março</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="edicao">
+                <h2>Janeiro</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered"> 
+                    <tr>
+                        <th>Analistas</th>
+                        <th>1-Seg</th>
+                        <th>2-Ter</th>
+                        <th>3-Qua</th>
+                        <th>4-Qui</th>
+                        <th>5-Sex</th>
+                        <th>6-Sab</th>
+                        <th>7-Dom</th>
+                        <th>8-Seg</th>
+                        <th>9-Ter</th>
+                        <th>10-Qua</th>
+                        <th>11-Qui</th>
+                        <th>12-Sex</th>
+                        <th>13-Sab</th>
+                        <th>14-Dom</th>
+                        <th>15-Seg</th>
+                        <th>1-Seg</th>
+                        <th>2-Ter</th>
+                        <th>3-Qua</th>
+                        <th>4-Qui</th>
+                        <th>5-Sex</th>
+                        <th>6-Sab</th>
+                        <th>7-Dom</th>
+                        <th>8-Seg</th>
+                        <th>9-Ter</th>
+                        <th>10-Qua</th>
+                        <th>11-Qui</th>
+                        <th>12-Sex</th>
+                        <th>13-Sab</th>
+                        <th>14-Dom</th>
+                        <th>15-Seg</th>     
 
-</body>
+                    </tr>        
+                            
+
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Fabio</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>    
+                    </tr>
+                    <tr>
+                        <td>Jonatan</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                        
+                    </tr>   
+                </table>
+            </div>
+            <div class="pull-right">
+                <button type="button" class="btn btn-primary">Editar</button>
+            </div>
+        </div>   
+    </body>
 </html>
